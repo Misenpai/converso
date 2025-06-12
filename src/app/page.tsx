@@ -4,8 +4,8 @@ import React from "react";
 const Page = () => {
   return (
     <div>
-      <div className="text-2xl underline">Welcome to my SaaS app</div>
-      <Button variant={"outline"}>Click Me</Button>
+      <h1 className="text-2xl underline">Welcome to my SaaS App</h1>
+      <Button>Let&apos;s get started</Button>
     </div>
   );
 };
