@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import { cn, getSubjectColor } from "@/lib/utils";
+import { cn, configureAssistant, getSubjectColor } from "@/lib/utils";
 import Image from "next/image";
 import { vapi } from "@/lib/vapi.sdk";
 import soundwaves from "@/constants/soundwaves.json";
@@ -92,7 +92,6 @@ const CompanionComponent = ({
       serverMessages: [],
     };
 
-    // @ts-expect-error
     vapi.start(configureAssistant(voice, style), assistantOverrides);
   };
 
